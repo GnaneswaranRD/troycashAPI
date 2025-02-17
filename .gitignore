@@ -1,2 +1,12 @@
-/.venv
-.env
+.venv/
+.venv.bk/
+.vscode/
+
+**/migrations/
+**/__pycache__/
+
+*.env
+*.log
+*.pyc
+*.py~
+*.sqlite3
