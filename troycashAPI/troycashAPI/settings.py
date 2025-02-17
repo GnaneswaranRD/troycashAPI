@@ -40,14 +40,22 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+]
+
+OTHER_APPS = [
     # other apps
     "django_extensions",  # for extra django-admin commands. like runserver_plus, shell_plus
     "rest_framework",  # django rest framework
     "rest_framework.authtoken",  # for generating token for users
     "drf_yasg",  # swagger setup
+]
+
+OWN_APPS = [
     # own apps
     "accounts",
 ]
+
+INSTALLED_APPS = INSTALLED_APPS + OTHER_APPS + OWN_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

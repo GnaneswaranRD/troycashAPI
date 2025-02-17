@@ -27,8 +27,6 @@ class RegisterNewUser(APIView):
     status_code: 200
     response:
         {"success": "User created"}
-
-    Developer: Pall Pandiyan.S
     """
 
     permission_classes = [permissions.AllowAny]
@@ -128,7 +126,6 @@ class LoginView(APIView):
         "user": <username>
     }
 
-    Developer: Pall Pandiyan.S
     """
 
     permission_classes = [permissions.AllowAny]
@@ -186,8 +183,6 @@ class LogoutView(APIView):
 
     status_code: 200
     output: {"status": "success"}
-
-    Developer: Pall Pandiyan.S
     """
 
     # authentication_classes = [authentication.SessionAuthentication]
