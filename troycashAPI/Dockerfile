@@ -9,9 +9,7 @@ WORKDIR ${PROJECT_DIR}
 # not copying the source code, when needed directly mounting the files.
 COPY . .
 
-# Switch to bash shell
-# SHELL ["/bin/bash", "-c"]
-
+# install requiered packages and setuptools
 RUN pip install -r requirements.txt && pip install -U setuptools
 
 CMD ["entrypoint.sh"]
