@@ -9,7 +9,7 @@ if [[ "$ENABLE_PIP_INSTALL_ON_STARTUP" == "1" ]]; then
     echo
     echo
     echo "===> Installing pip packages!"
-    pip install --no-cache-dir -e .
+    pip install -r requirements.txt
     # pip install --no-cache-dir apache-airflow==2.10.4 psycopg2-binary -r requirements.txt
 fi
 
