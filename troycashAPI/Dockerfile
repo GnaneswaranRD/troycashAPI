@@ -12,6 +12,6 @@ COPY . .
 # Switch to bash shell
 # SHELL ["/bin/bash", "-c"]
 
-RUN pip install -r requirements.txt && pip install --upgrade && pip install -U setuptools
+RUN pip install -r requirements.txt && pip install -U setuptools
 
 CMD ["entrypoint.sh"]
